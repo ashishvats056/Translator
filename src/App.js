@@ -7,7 +7,7 @@ function App(){
     const [from, setFrom]=useState('en')
     const [to, setTo] = useState('en')
     const [text, setText] = useState("")
-    const [result, setResult] = useState("")
+    const [result, setResult] = useState("Output text will be displayed here...")
 
     useEffect(()=>{
         fetch("https://libretranslate.com/languages")
@@ -49,7 +49,7 @@ function App(){
                 <h2>Translataurus</h2>
                 <button onClick={translateText} className="btn btn-primary">Translate</button>
             </div>
-            <div className="container" style={{display:"flex"}}>
+            <div className="container">
                 <div>
                     <span>
                         From: 

@@ -2,6 +2,9 @@
     text-align: center;
     font-size: x-large;
 }
+.container{
+    display: flex;
+}
 .container div{
     padding: 2%;
 }
